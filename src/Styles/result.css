@@ -1,0 +1,163 @@
+.results-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.score-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  color: #333;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+/* Player Name Heading */
+.player-name {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* High Score Badge */
+.high-score {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 6px 14px;
+  background: #7b1fa2;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(123, 31, 162, 0.4);
+  animation: popIn 0.6s ease-in-out;
+}
+
+/* Small pop animation */
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.score-circle {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  width: 160px;
+  height: 160px;
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 12;
+}
+
+.progress-ring-fill {
+  fill: none;
+  stroke: #7b1fa2;
+  stroke-width: 12;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s;
+}
+
+.score-circle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7b1fa2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.score-label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.score-value {
+  font-size: 26px;
+  margin: 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  padding: 12px;
+  border-radius: 12px;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+.stat-item p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-item span {
+  font-size: 12px;
+}
+
+.purple {
+  color: #7b1fa2;
+}
+
+.green {
+  color: #4caf50;
+}
+
+.red {
+  color: #f44336;
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.round-btn {
+  border: none;
+  border-radius: 50px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.round-btn.black {
+  background: #333;
+  color: white;
+}
+
+.round-btn.black:hover {
+  background: #000;
+}
