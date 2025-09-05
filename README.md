@@ -37,7 +37,7 @@ It includes features like score tracking, review answers, leaderboard, local sto
 
 2.	Install dependencies
 
-bash
+
 npm install
 
 3. start development server 
